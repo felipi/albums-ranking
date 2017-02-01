@@ -1,0 +1,11 @@
+<ons-page class="page page-dashboard" ng-controller="dashboardController">
+
+    <h1>Dashboard</h1>
+
+    <div ng-repeat="album in fetchedAlbums.topalbums.album">
+        <img ng-src="{{album.image[0]['#text']}}" /> 
+        <h5>{{album.name}}</h5>
+        <h6>{{album.artist.name}}</h6>
+    </div>
+
+</ons-page>
