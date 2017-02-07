@@ -8792,6 +8792,23 @@ button.close {
 .page-dashboard {
   margin-top: 55px;
 }
+/* line 4, ../pages/dashboard/_dashboard.scss */
+.page-dashboard .ons-page-inner {
+  margin: 0 20px;
+}
+
+/* line 9, ../pages/dashboard/_dashboard.scss */
+h1 {
+  text-align: center;
+}
+
+/* line 13, ../pages/dashboard/_dashboard.scss */
+.album {
+  display: block;
+  width: 100%;
+  vertical-align: top;
+  text-align: center;
+}
 
 /* line 1, ../components/menu/_menu.scss */
 .toolbar {

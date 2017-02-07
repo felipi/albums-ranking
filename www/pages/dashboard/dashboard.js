@@ -30,9 +30,10 @@ var AlbumsService = (function () {
     AlbumsService.prototype.fetchAlbums = function () {
         var fetchAction = {
             method: 'GET',
+            cache: true,
             isArray: false
         };
-        return this.$resource("" + API_URL, { method: 'user.gettopalbums', user: 'Kchopa', limit: 1000, api_key: '4ea6e00dd7c40c8c2e9f9b8727983b27', format: 'json' }, {
+        return this.$resource("" + API_URL, { method: 'user.gettopalbums', user: 'Kchopa', limit: 100, api_key: '4ea6e00dd7c40c8c2e9f9b8727983b27', format: 'json' }, {
             fetch: fetchAction
         });
     };

@@ -1,3 +1,18 @@
 .page-dashboard {
     margin-top: 55px;
+
+    .ons-page-inner {
+        margin: 0 20px;
+    }
+}
+
+h1 {
+    text-align: center;
+}   
+
+.album {
+    display: block;
+    width: 100%;
+    vertical-align: top;
+    text-align: center;
 }

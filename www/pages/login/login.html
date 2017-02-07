@@ -1,2 +1,8 @@
-<ons-page class="page page-login" ng-controller="appController">
+<ons-page class="page page-login" ng-controller="loginController">
+    <h1>Login</h1>
+
+    <input type="text" ng-model="username">
+    <input type="password" ng-model='password'>
+    <input type='submit' ng-click='$ctrl.attemptLogin(username,password)'>
+    <a href="#">Or register</a>
 </ons-page>

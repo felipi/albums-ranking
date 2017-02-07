@@ -19,9 +19,15 @@
   },
   "homepage": "https://github.com/phonegap/phonegap-app-hello-world",
   "dependencies": {
+    "bcryptjs": "^2.4.0",
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.1",
     "express": "^4.14.1",
+    "jwt-simple": "^0.5.1",
     "mongodb": "^2.2.22",
-    "mongoose": "^4.8.1"
+    "mongoose": "^4.8.1",
+    "passport": "^0.3.2",
+    "passport-jwt": "^2.2.1"
   },
   "devDependencies": {
     "@types/angular": "^1.6.0",

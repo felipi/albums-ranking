@@ -1,9 +1,8 @@
 <ons-page class="page page-dashboard" ng-controller="dashboardController">
-
-    <h1>Dashboard</h1>
-
-    <div ng-repeat="album in fetchedAlbums.topalbums.album">
-        <img ng-src="{{album.image[0]['#text']}}" /> 
+    <h1>Page {{fetchedAlbums.topalbums['@attr'].page}} of {{fetchedAlbums.topalbums['@attr'].totalPages}}
+    <div class="album" ng-repeat="album in fetchedAlbums.topalbums.album">
+        <h6>#{{$index + 1}} ({{album.playcount}})</h6>
+        <img ng-src="{{album.image[2]['#text']}}" /> 
         <h5>{{album.name}}</h5>
         <h6>{{album.artist.name}}</h6>
     </div>
